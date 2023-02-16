@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("b8.jpg");
+    background-size: cover;
+   }
+
+a{
+    color: rgb(236, 214, 10);
+    
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+ }
+
+    /* header start */
+    
+    header {
+        height: 100px;
+        border-bottom: 2px; solid rgba(255,255,255,0.08);
+    }
+    
+header nav{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    header nav .logo a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-weight: 1000;
+        font-size: 30px;
+     }
+
+     nav ul{
+        list-style: none;
+        display: flex;
+        column-gap: 30px;
+     }
+
+    nav ul a{
+        color: rgb(235, 248, 248);
+        text-decoration: none;
+     }
+     
+     nav ul a:hover{
+        color: #047c68;
+        transition: color .25s ease;
+     }
+    
+
+
+     nav .menu{
+        display: flex;
+    align-items: center;
+    column-gap: 48px;
+     }
+
+     nav .menu .menu-button{
+        color: #033b38;
+        background-color: rgba(251, 255, 255, 0.08);
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 56px;
+     }
+
+     nav .menu .menu-button:hover {
+        background-color: #ffffff;
+        transition: all .25s ease;
+    }
+
+ /* header end*/
+
+ /* section start */
+ .content{
+    color: rgb(255, 255, 255);
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+ }
+
+ .content h1{
+    font-size: 60px;
+    text-align: center;
+ }
+
+ .content p{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+    color: #c20534;
+   
+    
+}
+
+.content .links{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+    
+}
+
+.content .links a{
+background-color: rgb(255, 255, 255);
+padding: 20px;
+width: 280px;
+color: #c20534;
+text-align: center;
+font-size: 18px;
+text-decoration: none;
+border-radius: 56px;
+transition: all .25s ease-in;
+}
+
+.content .links a:hover {
+    background-color: #033b38;
+}
+
+
+
+
+ /* section end */
+
+  /* responsive start */
+@media(max-width:576px){
+    .container{
+        width: 100%;
+        padding-left: 12px;
+       padding-right: 12px;
+     }
+        
+     .menu ul {
+    column-gap: 20px;
+    }
+
+     .menu .menu-button {
+        display: none;
+     }
+}
+
+.content {
+    padding-top: 65px;
+}
+
+.content h1 {
+    font-size: 46px;
+ }
+
+ .content p {
+    font-size: 26px;
+ }
+
+ .content .links a {
+    padding: 14px;
+    width: 20%;
+ }
+
+
+  /* responsive end */
